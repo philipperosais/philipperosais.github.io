@@ -68,10 +68,10 @@
                     <h3 class="mb-3 text-center text-light">Get in touch</h3>
                 </div>
                 <div class="col-md-6 styled-input">
-                    <input type="text" name="Firstname" class="firstname" placeholder="Firstname" maxlength="30" pattern="[A-zÀ-ú\'\ ]{2,30}" required="">
+                    <input type="text" name="Firstname" class="firstname" placeholder="Firstname" maxlength="30" pattern="/^[a-z ,.'-]+$/i" required="">
                 </div>
                 <div class="col-md-6 styled-input">
-                    <input type="text" name="Name" class="name" placeholder="Name" maxlength="30" pattern="[A-zÀ-ú\'\ ]{2,30}" required="">
+                    <input type="text" name="Name" class="name" placeholder="Name" maxlength="30" pattern="/^[a-z ,.'-]+$/i" required="">
                 </div>
                 <div class="col-md-6 styled-input">
                     <input type="email" name="Email" class="email" placeholder="Email" pattern="[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+.[a-zA-Z.]{2,15}" required="">
