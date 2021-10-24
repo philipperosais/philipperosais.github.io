@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de Philippe ROSAIS Concepteur Développeur Java">
+    <title>Philippe ROSAIS Concepteur Développeur Java</title>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon-apple.png">
+    <link rel="icon" type="image/ico" sizes="48x48" href="img/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- Fontawesome CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <!-- Custom links -->
+    <link rel="stylesheet" href="css/style-overall.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <header class="d-flex justify-content-center py-3 mb-4">
+        <nav class="d-flex justify-content-center">
+            <div class="d-md-none d-flex justify-content-center menu-toggle">
+                <i class="fas fa-bars text-light"></i>
+            </div>
+            <ul class="nav nav-pills d-md-flex mt-3">
+                <li class="nav-item"><a href="index.html" class="nav-link active" aria-current="page">HOME</a></li>
+                <li class="nav-item"><a href="services.html" class="nav-link">SERVICES</a></li>
+                <li class="nav-item"><a href="skills.html" class="nav-link">SKILLS</a></li>
+                <li class="nav-item"><a href="portfolio.html" class="nav-link">PORTFOLIO</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container globalcontainer">
+        <!-- Jobtitle -->
+        <main class="container jobtitle pt-3">
+            <div class="row mb-4">
+                <h1 class="text-center text-light">Philippe ROSAIS</h1>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-3 col-md-4 col-5 job">
+                    <a href="services.html">
+                        <h3 class="text-center">Front-end</h3>
+                        <h3 class="text-center">developer</h3>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-8 job">
+                    <a href="services.html">
+                        <h3 class="text-center">Back-end</h3>
+                        <h3 class="text-center">developer</h3>
+                    </a>
+                </div>
+            </div>
+        </main>
+        <!-- //Jobtitle -->
+
+        <!-- Contact -->
+        <section class="container col-lg-8 contact mb-4">
+            <form action="#" method="post" onsubmit="controlform()">
+                <div class="col-md-6">
+                    <h3 class="mb-3 text-center text-light">Get in touch</h3>
+                </div>
+                <div class="col-md-6 styled-input">
+                    <input type="text" name="Firstname" class="firstname" placeholder="Firstname" maxlength="30" pattern="[A-zÀ-ú\'\ ]{2,30}" required="">
+                </div>
+                <div class="col-md-6 styled-input">
+                    <input type="text" name="Name" class="name" placeholder="Name" maxlength="30" pattern="[A-zÀ-ú\'\ ]{2,30}" required="">
+                </div>
+                <div class="col-md-6 styled-input">
+                    <input type="email" name="Email" class="email" placeholder="Email" pattern="[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+.[a-zA-Z.]{2,15}" required="">
+                </div>
+                <div class="col-md-6 styled-input">
+                    <input type="tel" name="Phone" class="phone" placeholder="Phone number" pattern="[0-9]{3,20}" required="">
+                </div>
+                <div class="col-md-6 styled-input">
+                    <textarea name="Message" class="message" placeholder="Message" maxlength="400" required=""></textarea>
+                </div>
+                <div class="col-md-6 click text-center mt-3">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </section>
+        <!-- //Contact -->
+
+        <!-- Footer -->
+        <footer>
+            <div class="container py-md-1">
+                <div class="row mt-4">
+                    <div class="col-lg-4 col-md-6 mt-md-0 mt-4">
+                        <h3>Address</h3>
+                        <div class="row">
+                            <ul>
+                                <li>10 Allée Pernette du Guillet</li>
+                                <li>75019 PARIS</li>
+                                <li><i class="fas fa-mobile-alt"></i> +33 6.52.20.50.96</li>
+                                <li><i class="far fa-envelope-open"></i>
+                                    <a href="mailto:philipperosais@gmail.com">philipperosais@gmail.com</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mt-md-0 mt-4">
+                        <h3>Quick Links</h3>
+                        <div class="row">
+                            <ul class="col-6 links">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="services.html">Services</a></li>
+                                <li><a href="skills.html">Skills</a></li>
+                                <li><a href="portfolio.html">Portfolio</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center py-3" id="copyright">
+                    <p>© 2021 | Design by
+                        <a href="https://philipperosais.github.io"> Philippe ROSAIS - Concepteur Développeur
+                            d'Applications.</a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <!-- //Footer -->
+    </div>
+
+    <!-- Background video -->
+    <video autoplay loop muted src="img/Paris.mp4">
+    </video>
+    <!-- JS link -->
+    <script src="js/script.js"></script>
+    <!-- JS plugin CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>

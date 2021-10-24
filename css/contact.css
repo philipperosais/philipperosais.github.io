@@ -1,0 +1,18 @@
+address,
+address a{
+    color: white;
+    text-decoration: none;
+}
+
+
+/* RESPONSIVE WEB DESIGN */
+
+/* Medium devices and up */
+@media all and (min-width: 768px) {
+    .contact{
+        position: relative;
+        margin-left: 20%;
+    }
+}
+
+/** RESPONSIVE WEB DESIGN **/

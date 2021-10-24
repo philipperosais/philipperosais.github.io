@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de Philippe ROSAIS Concepteur Développeur Java">
+    <title>Philippe ROSAIS Concepteur Développeur Java</title>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon-apple.png">
+    <link rel="icon" type="image/ico" sizes="48x48" href="img/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- Fontawesome CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <!-- Custom links -->
+    <link rel="stylesheet" href="css/style-overall.css">
+    <link rel="stylesheet" href="css/index.css"> <!-- For Contact custom -->
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+
+<body>
+    <header class="d-flex justify-content-center py-3 mb-4">
+        <nav class="d-flex justify-content-center">
+            <div class="d-md-none d-flex justify-content-center menu-toggle">
+                <i class="fas fa-bars text-light"></i>
+            </div>
+            <ul class="nav nav-pills d-md-flex mt-3">
+                <li class="nav-item"><a href="index.html" class="nav-link">HOME</a></li>
+                <li class="nav-item"><a href="services.html" class="nav-link">SERVICES</a></li>
+                <li class="nav-item"><a href="skills.html" class="nav-link">SKILLS</a></li>
+                <li class="nav-item"><a href="portfolio.html" class="nav-link">PORTFOLIO</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link active" aria-current="page">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container globalcontainer">
+
+        <!-- Contact -->            
+        <section class="container col-12 contact mb-5 pt-5">
+            <div class="row flex justify-content-center">
+                <div class="col-xl-5 col-lg-7 col-md-8 col-12">
+                    <h3 class="mb-4 text-center text-light">CONTACT</h3>
+                    <div class="container bg-grey">
+                        <div class="row flex justify-content-center">
+                            <div class="col-10">
+                                <form action="#" method="post" class="my-5" onsubmit="controlform()">
+                                    <div class="col-12 styled-input">
+                                        <input type="text" name="Firstname" class="firstname" placeholder="Firstname" maxlength="30" pattern="[A-zÀ-ú\'\ ]{2,30}" required="">
+                                    </div>
+                                    <div class="col-12 styled-input">
+                                        <input type="text" name="Name" class="name" placeholder="Name" maxlength="30" pattern="[A-zÀ-ú\'\ ]{2,30}" required="">
+                                    </div>
+                                    <div class="col-12 styled-input">
+                                        <input type="email" name="Email" class="email" placeholder="Email" pattern="[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+.[a-zA-Z.]{2,15}" required="">
+                                    </div>
+                                    <div class="col-12 styled-input">
+                                        <input type="tel" name="Phone" class="phone" placeholder="Phone number" pattern="[0-9]{3,20}" required="">
+                                    </div>
+                                    <div class="col-12 styled-input">
+                                        <textarea name="Message" class="message" placeholder="Message" maxlength="400" required=""></textarea>
+                                    </div>
+                                    <div class="col-12 click text-center mt-3">
+                                        <input type="submit" value="Submit">
+                                    </div>
+                                </form>
+                                <address class="d-md-none col-12">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-8 col-12">
+                                                <h3 class="mb-4 text-center text-light">ADDRESS</h3>
+                                                <p>10 Allée Pernette du Guillet</p>
+                                                <p>75019 PARIS</p>
+                                                <p>Phone : +33 652205096</p>
+                                                <p>Email : philipperosais@gmail.com</p>
+                                                <p>Lien Github : <a
+                                                        href="https://philipperosais.github.io">https://philipperosais.github.io</a>
+                                                </p>
+                                            </div>
+                                            <div class="col-md-4 col-12">
+                                                <iframe
+                                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.117775522003!2d2.37461071590339!3d48.87503130748858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66de7779c7dc1%3A0x670a923295099291!2s10%20All.%20Pernette%20du%20Guillet%2C%2075019%20Paris!5e0!3m2!1sfr!2sfr!4v1634287801864!5m2!1sfr!2sfr"
+                                                    width="200" height="200" style="border:0;" allowfullscreen=""
+                                                    loading="lazy">
+                                                </iframe>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </address>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //Contact -->
+
+        <!-- Footer -->
+        <footer>
+            <section>
+                <div class="container py-md-1">
+                    <div class="row mt-4">
+                        <div class="col-md-3 col-8 mt-md-0 mt-4 pl-5">
+                            <h3>Quick Links</h3>
+                            <div class="row">
+                                <ul class="col-6 links">
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="services.html">Services</a></li>
+                                    <li><a href="skills.html">Skills</a></li>
+                                    <li><a href="portfolio.html">Portfolio</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <address class="col-5 d-md-inline d-none">
+                            <h3 class="mb-4 text-light">Address</h3>
+                            <p>10 Allée Pernette du Guillet 75019 PARIS</p>
+                            <p>Phone : +33 6.52.20.50.96</p>
+                            <p>Email : philipperosais@gmail.com</p>
+                            <p>Lien Github : <a href="https://philipperosais.github.io">https://philipperosais.github.io</a>
+                            </p>
+                        </address>
+                        <div class="col-3 mt-1 d-md-inline d-none">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.117775522003!2d2.37461071590339!3d48.87503130748858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66de7779c7dc1%3A0x670a923295099291!2s10%20All.%20Pernette%20du%20Guillet%2C%2075019%20Paris!5e0!3m2!1sfr!2sfr!4v1634287801864!5m2!1sfr!2sfr"
+                                width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy">
+                            </iframe>
+                        </div>
+                    </div>
+                    <div class="text-center py-3" id="copyright">
+                        <p>© 2021 | Design by
+                            <a href="https://philipperosais.github.io"> Philippe ROSAIS - Concepteur Développeur
+                                d'Applications.</a>
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </footer>
+        <!-- //Footer -->
+    </div>
+
+    <!-- Background video -->
+    <video autoplay loop muted src="img/Paris.mp4">
+    </video>
+    <!-- JS link -->
+    <script src="js/script.js"></script>   
+    <!-- JS plugin CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,169 @@
+@font-face {
+    font-family: 'gelasiosemibold';
+    src        : url('../font/gelasio-semibold.eot');
+    src        : url('../font/gelasio-semibold.eot?#iefix') format('embedded-opentype'),
+        url('../font/gelasio-semibold.woff2') format('woff2'),
+        url('../font/gelasio-semibold.woff') format('woff'),
+        url('../font/gelasio-semibold.ttf') format('truetype'),
+        url('../font/gelasio-semibold.svg#gelasiosemibold') format('svg');
+    font-weight: normal;
+    font-style : normal;
+}
+
+body {
+    overflow-x      : hidden;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index         : 0;
+}
+
+header {
+    position: relative;
+    height          : 100px;
+    z-index : 2;
+}
+
+nav {
+    position        : absolute;
+    top             : 0;
+    left            : 0;
+    width           : 100%;
+    min-height      : 70px;
+    background-color: rgba(128, 128, 128, 0.4);
+    z-index         : 1;
+    cursor: pointer;
+}
+
+nav li a {
+    font-family: 'gelasiosemibold';
+}
+
+.nav {
+    display: none;
+}
+
+.menu-toggle {
+    position        : absolute;
+    top             : 10px;
+    right           : 10px;
+    width           : 50px;
+    height          : 50px;
+    padding-top     : 12px;
+    background-color: rgb(0, 188, 212);
+    border-radius   : 50%;
+    font-size       : 1.8em;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.globalcontainer,
+.contact,
+footer {
+    position: relative;
+    z-index : 1;
+}
+
+.bg-grey{
+    background-color: rgba(128, 128, 128, 0.4);
+}
+
+/* Footer */
+footer{
+    padding-left: 35px;
+    background-color: rgba(128, 128, 128, 0.1);
+}
+
+footer h3{
+    font-family: 'gelasiosemibold';
+}
+
+footer,
+footer a {
+    color          : white;
+    text-decoration: none;
+}
+
+summary {
+    font-size: 1.6em;
+}
+
+footer li {
+    list-style: none;
+}
+
+#copyright p {
+    color: grey;
+}
+
+/** Footer **/
+
+/* Background video */
+video {
+    position : fixed;
+    top      : 50%;
+    left     : 50%;
+    transform: translate(-50%, -50%);
+    height   : 100vh;
+    z-index  : -1;
+}
+
+/** Background video **/
+
+/* CSS ANIMATIONS */
+
+nav:hover .menu-toggle {
+    background-color: rgba(0, 188, 212, 0.4);
+}
+
+nav li:hover{
+    height: 40px;
+    border-radius: 5px;
+    background-color: grey;
+}
+
+nav li:hover a{
+    color: white!important;
+}
+
+a:hover{
+    color: grey;
+    text-shadow: 1px 1px 2px black;
+}
+
+/** CSS ANIMATIONS **/
+
+/* RESPONSIVE WEB DESIGN */
+
+/* Extra small devices (watches, 250px and down) */
+@media all and (max-width: 250px) {
+    .bg-grey{
+        background-color: rgba(128, 128, 128, 0);
+    }
+}
+
+/* Very small devices (phones, 400px and down) */
+@media all and (max-width: 400px) {
+    h2{
+        font-size: 1.2em;
+    }
+    
+    h3, p{
+        font-size: 0.8em;
+    }
+}
+
+/* Small devices (landscape phones, 767px and down) */
+@media all and (max-width: 767px) {
+    nav:hover {
+        background-color: rgba(128, 128, 128, 0.4);
+    }
+
+    nav:hover ul {
+        display: block;
+    }
+
+    .globalcontainer {
+        width: 80%;
+    }
+}
+
+/** RESPONSIVE WEB DESIGN **/

@@ -1,0 +1,92 @@
+/* Jobtitle */
+.jobtitle .job:last-child {
+    border-left: solid 2px rgba(255, 255, 255, 0.6);
+}
+
+.job a,
+.job h3 {
+    color          : white;
+    text-decoration: none;
+    cursor         : pointer;
+}
+
+/** Jobtitle **/
+
+/* Contact */
+.styled-input {
+    margin: 1em 0;
+}
+
+.contact input,
+.contact textarea {
+    padding   : .8em 1em;
+    border    : 1px solid #ccc;
+    font-size : 16px;
+    width     : 100%;
+    color     : #333;
+    background: rgba(229, 143, 230, 0.1);
+}
+
+.contact textarea {
+    min-height: 10em;
+}
+
+.contact input[type="submit"] {
+    padding       : 10px 30px;
+    font-size     : 16px;
+    background    : #00bcd4;
+    letter-spacing: 1px;
+    color         : #fff;
+    border        : none;
+    cursor        : pointer;
+}
+
+.contact input[type="submit"]:hover {
+    background: #333;
+}
+
+/** Contact **/
+
+/* CSS ANIMATIONS */
+.job:hover h3 {
+    color: grey;
+    text-shadow: 1px 1px 2px black;
+}
+
+/** CSS ANIMATIONS **/
+
+/* RESPONSIVE WEB DESIGN */
+
+/* Medium devices and down) */
+@media all and (max-width: 767px) {
+    .jobtitle .job:first-child {
+        border-bottom: solid 2px rgba(255, 255, 255, 0.6);
+        ;
+    }
+
+    .jobtitle .job:last-child {
+        border-left  : none;
+        margin-bottom: 30px;
+    }
+
+}
+
+/* Medium devices and up */
+@media all and (min-width: 768px) {
+    .contact {
+        margin-left: 50%;
+    }
+
+    .contact input {
+        height: 40px;
+    }
+}
+
+/* Large devices and up */
+@media all and (min-width: 991px) {
+    .contact {
+        margin-left: 65%;
+    }
+}
+
+/** RESPONSIVE WEB DESIGN **/
