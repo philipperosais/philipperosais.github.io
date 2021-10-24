@@ -1,4 +1,4 @@
-let regex = /[A-zÀ-ú\'\ ]{2,30}/;
+let regex = /^[a-zA-ZÀ-ú\-\s\']*/i;
 let firstname = document.querySelector(".firstname");
 
 firstname.addEventListener("keyup", function() {
